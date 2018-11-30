@@ -1,0 +1,96 @@
+:root{
+    --c-Oscuro: #36434C;
+    --c-Claro: #7F9DA8;
+    --c-Alter: #415C5B;
+}
+
+body{
+    background: var(--c-Oscuro);
+    
+}
+/*
+se puede utilizar margins oh position para mover 
+objetos, position relative es para moverlo 
+relativo a su posicion, absolute para moverlo
+a cualquier parte de la pantalla. */
+.Box {
+   
+   height: 65vh;
+   width:  20vw;
+   margin-left: 810px;
+   margin-top: 100px;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: auto 1fr 1fr;;
+   position: relative;
+   background-color: #415C5B;
+}
+
+.Box .UI {
+    height: 280px;
+    width: 280px;
+    grid-column: 2/ 3;
+     grid-row: 1 / 2;
+    grid-gap: 20px;
+    position: relative;
+    right: 550px;
+    line-height: 220px;
+    text-decoration-color: aliceblue;
+    font-size: 40px;
+    margin-top: 140px;
+    margin-left: 195px;
+    margin-right: 80px;
+    background-color: #7F9DA8;
+    border: solid 3px var(--c-Oscuro);
+}
+
+.Numero {
+    position: relative;
+    bottom: 50px;
+    left: 110px;
+}
+.inputs {
+    width: 200px;
+    position: absolute;
+    bottom: 50px;
+    margin-left: 40px;
+margin-bottom: 0px;
+display: grid;
+grid-template-columns: 100px 70px;
+grid-template-rows: 40px 40px 40px;
+font-size: 24px;
+align-items: center;
+grid-template-areas: 
+"un unidades" 
+"de decenas"
+"ce centenas";
+grid-gap: 10px;
+
+}
+
+.un {
+    grid-area: un;
+   
+   
+}
+.de {
+    grid-area: de;
+}
+.ce {
+    grid-area: ce;
+}
+.unidades {
+grid-area: unidades;
+border: solid 3px var(--c-Oscuro);
+}
+.decenas {
+    grid-area: decenas;
+    border: solid 3px var(--c-Oscuro);
+}
+.centenas {
+    grid-area: centenas;
+    border: solid 3px var(--c-Oscuro);
+}
+
+
+
