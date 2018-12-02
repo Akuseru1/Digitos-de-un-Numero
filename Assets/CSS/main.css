@@ -20,25 +20,30 @@ a cualquier parte de la pantalla. */
    margin-left: 810px;
    margin-top: 100px;
    display: grid;
-   grid-template-columns: 100%;
-   grid-template-rows: auto 1fr 1fr;;
-   position: relative;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;;
+   border: solid 10px aqua;
    background-color: #415C5B;
+   
+   
+  
 }
 
 .Box .UI {
-    height: 280px;
-    width: 280px;
+    
+    height:29vh;
+    width: 14vw;
     grid-column: 2/ 3;
      grid-row: 1 / 2;
     grid-gap: 20px;
     position: relative;
+    
     right: 550px;
     line-height: 220px;
     text-decoration-color: aliceblue;
     font-size: 40px;
     margin-top: 140px;
-    margin-left: 195px;
+    margin-left: 410px;
     margin-right: 80px;
     background-color: #7F9DA8;
     border: solid 3px var(--c-Oscuro);
@@ -54,17 +59,17 @@ a cualquier parte de la pantalla. */
     position: absolute;
     bottom: 50px;
     margin-left: 40px;
-margin-bottom: 0px;
-display: grid;
-grid-template-columns: 100px 70px;
-grid-template-rows: 40px 40px 40px;
-font-size: 24px;
-align-items: center;
-grid-template-areas: 
-"un unidades" 
-"de decenas"
-"ce centenas";
-grid-gap: 10px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 100px 70px;
+    grid-template-rows: 40px 40px 40px;
+    font-size: 24px;
+    align-items: center;
+    grid-template-areas: 
+    "un unidades" 
+    "de decenas"
+    "ce centenas";
+    grid-gap: 10px;
 
 }
 
