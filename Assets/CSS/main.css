@@ -22,7 +22,6 @@ a cualquier parte de la pantalla. */
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 1fr 1fr 1fr;;
-   border: solid 10px aqua;
    background-color: #415C5B;
    
    
